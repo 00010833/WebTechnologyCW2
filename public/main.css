@@ -43,10 +43,13 @@
 .todos {
     margin-top: 25px;
     border: 1px solid rgb(162, 0, 255); 
+    align-items: center;
     padding: 10px;
 }
 
 .todo {
+    display: flex;
+    justify-content: space-between;
     padding: 25px;
     font-size: 1.5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
@@ -54,4 +57,24 @@
 
 .todo:hover{
     background: whitesmoke;
+}
+
+.delete {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(162, 0, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    background: rgb(162, 0, 255);
+    color: whitesmoke;
+}
+
+.done, 
+.undone {
+  text-decoration: none;
+  color: black;
+}
+
+.done {
+  text-decoration: line-through;
 }
